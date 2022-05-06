@@ -170,3 +170,24 @@ else:
 for i in range(5): # 0, 1, 2, 3, 4
 	print("Hello Word") # Ejecuta "Hello Word" 4 veces
 ````
+
+## **While**
+*Un bucle **while** permite repetir la ejecución de un grupo de instrucciones mientras se cumpla una condición (es decir, mientras la condición tenga el valor True).*
+
+*La sintaxis del bucle **while** es la siguiente:*
+```py
+while condicion:
+    cuerpo del bucle
+```
+```py
+numero = int(input("Ingresa un numero positivo menor que 100: "))
+
+
+while numero<0 or numero>100:
+	print("Has introducido un numero negativo")
+	numero = int(input("Ingresa el numero de nuevo: "))
+
+print("Ya puedes pasar")
+print("verificación exitosa, porque el numero: ", str(numero) + " es positivo") 
+```
+
