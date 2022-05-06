@@ -184,7 +184,7 @@ numero = int(input("Ingresa un numero positivo menor que 100: "))
 
 
 while numero<0 or numero>100:
-	print("Has introducido un numero negativo")
+	print("Has introducido un numero incorrecto")
 	numero = int(input("Ingresa el numero de nuevo: "))
 
 print("Ya puedes pasar")
