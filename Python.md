@@ -120,5 +120,53 @@ print(Pais)     #  Colombia
 print(year)     #  2022
 
 ```
+# **Bucles**
+*Los bucles son otra herramienta para alterar el flujo normal de un programa. Nos permiten repetir una porción de código tantas veces como queramos. Python incluye únicamente dos tipos de bucle: while y for.* 
+___
+## **For**
+En general, un bucle es una estructura de control que repite un bloque de instrucciones. Un bucle for es un bucle que repite el bloque de instrucciones un número prederminado de veces. El bloque de instrucciones que se repite se suele llamar cuerpo del bucle y cada repetición se suele llamar iteración.
+
+La sintaxis de un bucle for es la siguiente:
+
+```python
+for variable in elemento iterable (lista, cadena, range, etc.):
+    cuerpo del bucle
+```
+
+```py
+for i in [1,2,3]:
+	print("Hello") 
+
+# Hello
+# Hello 
+# Hello
 
 
+```
+```py
+# con (end)
+
+for i in [1,2,3]:
+	print("Hello", end=" ") # Hello Hello Hello
+```
+```PY
+
+mail=False
+
+Email = input("Ingresa tu correo electronico: ")
+
+for i in Email:
+	if (i=="@"):
+		mail=True
+if mail:
+	print("El email es correcto") 
+else:
+	print("El email es incorrecto")
+
+```
+> **range()** *es el argumento que controla el número de veces que se ejecuta el bucle.*
+
+````py
+for i in range(5): # 0, 1, 2, 3, 4
+	print("Hello Word") # Ejecuta "Hello Word" 4 veces
+````
