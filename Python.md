@@ -96,6 +96,49 @@ b = list()  # Forma 2
 ```python
 milista = ["Andres", "Colombia", 27, 2002]
 ```
+```py
+lista = ["Andres", "Pacheco", "Colombia"]
+print(lista)
+
+print(lista[0:2])
+print(lista[-1])
+print(len(lista))
+
+
+
+lista.append(2022) # Append se utiliza para agregar mas elementos a la lista 
+print(lista)
+
+lista.insert(3, "Mayo") # Insertar un elemento donde queramos en este caso posición 3
+print(lista)
+
+```
+
+```py
+numeros = [1, 2, 3, 4, 5]
+
+numeros.extend([6, 7, 8])  # Extend se utiliza para concatenar listas 
+print(numeros)
+```
+
+```py
+lista = ["Andres", "Colombia", 2022]
+print("Andres" in lista)     # se utiliza para saber si un elemento esta en la lista (True o False)
+
+
+
+print(lista.index(2022)) # posición del elemento 2022 en este caso seria index 2
+
+print(lista.count("Andres")) # Cuantas veces esta "Andres"
+
+lista.remove(2022) # Elimina un elemento descrito
+print(lista)  
+
+lista.clear() # Elimina todos los elementos
+print(lista)
+```
+
+
 * ## **Tuplas**
 *Al igual que en las listas hay dos formas de hacerlo:* 
 
@@ -120,6 +163,9 @@ print(Pais)     #  Colombia
 print(year)     #  2022
 
 ```
+
+
+
 # **Bucles**
 *Los bucles son otra herramienta para alterar el flujo normal de un programa. Nos permiten repetir una porción de código tantas veces como queramos. Python incluye únicamente dos tipos de bucle: while y for.* 
 ___
