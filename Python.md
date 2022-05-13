@@ -237,3 +237,34 @@ print("Ya puedes pasar")
 print("verificación exitosa, porque el numero: ", str(numero) + " es positivo") 
 ```
 
+```py
+for name in "Andres":
+	print("Estas viendo la letra: " + name)
+```
+
+# **Continue**
+
+La instrucción **continue** da la opción de omitir la parte de un bucle en la que se activa una condición externa, pero continuar para completar el resto del bucle. Es decir, la iteración actual del bucle se interrumpirá, pero el programa volverá a la parte superior del bucle.
+
+```py
+for name in "Andres Pacheco":
+	if name==" ": # Quitara el espacio entre Andres y Pacheco
+		continue
+	print("Estas viendo la letra: " + name)
+
+# Estas viendo la letra: A
+# Estas viendo la letra: n
+# Estas viendo la letra: d
+# Estas viendo la letra: r
+# Estas viendo la letra: e
+# Estas viendo la letra: s
+# Estas viendo la letra: P
+# Estas viendo la letra: a
+# Estas viendo la letra: c
+# Estas viendo la letra: h
+# Estas viendo la letra: e
+# Estas viendo la letra: c
+# Estas viendo la letra: o
+
+
+```
