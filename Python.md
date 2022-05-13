@@ -49,6 +49,21 @@ Los nombres de las variables pueden contener mayúsculas, pero tenga en cuenta q
 >>> print (numero2)
 6.5 
 ```
+
+```py
+nombre = input("Introduce tu nombre: ")
+
+print("Hola " + nombre + ", vamos a realizar una multiplicación.")
+
+num1 = int(input("Introduce el primer numero: "))
+num2 = int(input("Introduce el segundo numero: "))
+
+resultado = num1*num2
+
+print(nombre + " El resultado de la multiplicación es: ", resultado)
+```
+
+
 # **Funciones** 
 Una función te permite definir un bloque de código reutilizable que se puede ejecutar muchas veces dentro de tu programa. Una función tiene las siguientes características:
 
@@ -163,7 +178,34 @@ print(Pais)     #  Colombia
 print(year)     #  2022
 
 ```
+# **Condicionales If - Else**
 
+```py
+print("Este es un sistema que te dice si pasaste el semestre.")
+
+nombre = input("Para comenzar digita tu nombre: ")
+print("Hola " + nombre + ", presiona la tecla 'Enter' para ingresar tus calificaciones.")
+
+matematicas = int(input("Introduce la calificación de Matemáticas: "))
+fisica = int(input("Introduce la calificación de Fisíca: "))
+quimica = int(input("Introduce la calificación de Química: "))
+
+promedio = (matematicas + fisica + quimica) / 3
+
+promedio = int(promedio)
+
+if promedio >= 3:
+	print("Felicidades " + nombre + ", has pasado el semestre en: ", promedio)
+
+
+else:
+	print("Lo sentimos mucho " + nombre + ", has reprobado el semestre.")
+
+
+print("El programa ha finalizado.")	 
+
+
+```
 
 
 # **Bucles**
