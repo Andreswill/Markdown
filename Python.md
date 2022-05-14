@@ -378,3 +378,11 @@ print("\n")
 longitud = len("Hola Andres")
 print(longitud)
 ```
+```py
+nombre = input("Ingresa tu nombre: ")
+edad = int(input("Ingresa tu edad: "))
+pais = input("De que país eres: ")
+
+
+print("Hola mi nombre es {}, y tengo {} años. Soy de {} ".format(nombre, edad, pais))
+```
