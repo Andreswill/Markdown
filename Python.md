@@ -178,7 +178,7 @@ print(Pais)     #  Colombia
 print(year)     #  2022
 
 ```
-# **Condicionales If - Else**
+# **Condicionales if - else**
 
 ```py
 print("Este es un sistema que te dice si pasaste el semestre.")
@@ -206,7 +206,64 @@ print("El programa ha finalizado.")
 
 
 ```
+```py
+print(":::Calculadora:::")
 
+print("\n")
+print("Menú de opciones...")
+print("\n")
+print("Suma: 1")
+print("Resta: 2")
+print("Multiplicación: 3")
+print("División: 4")
+print("División Entera: 5")
+print("Exponente: 6")
+print("Resto o Modulo: 7")
+print("\n")
+
+opcion = int(input("Ingresa el numero de la operación que deseas ejecutar: "))
+print("\n")
+
+if opcion == 1:
+	numero = int(input("Ingresa el primer numero: "))
+	numero += int(input("Ingresa el segundo numero: "))
+	print("El resultado de la suma es: ", numero)
+	print("FIN DEL PROGRAMA...")
+elif opcion == 2:
+	numero = int(input("Ingresa el primer numero: "))
+	numero -= int(input("Ingresa el segundo numero: "))
+	print("El resultado de la resta es: ", numero)
+	print("FIN DEL PROGRAMA...")
+elif opcion == 3:
+	numero = int(input("Ingresa el primer numero: "))
+	numero *= int(input("Ingresa el segundo numero: "))	
+	print("El resultado de la Multiplicación es: ", numero)
+	print("FIN DEL PROGRAMA...")
+elif opcion == 4:
+	numero = float(input("Ingresa el primer numero: "))
+	numero /= float(input("Ingresa el segundo numero: "))
+	print("El resultado de la División es: ", round(numero, 2))
+	print("FIN DEL PROGRAMA...")
+elif opcion == 5:
+	numero = int(input("Ingresa el primer numero: "))
+	numero //= int(input("Ingresa el segundo numero: "))
+	print("El resultado de la División Entera es: ", numero)
+	print("FIN DEL PROGRAMA...")
+elif opcion == 6:
+	numero = int(input("Ingresa el primer numero: "))
+	numero **= int(input("Ingresa el segundo numero: "))
+	print("El resultado de Exponente es: ", numero)
+	print("FIN DEL PROGRAMA...")
+elif opcion == 7:
+	numero = int(input("Ingresa el primer numero: "))
+	numero %= int(input("Ingresa el segundo numero: "))
+	print("El resultado de Resto o Modulo es: ", numero)
+	print("FIN DEL PROGRAMA...")
+else:
+	print("Opción no valida...")
+
+
+```
 
 # **Bucles**
 *Los bucles son otra herramienta para alterar el flujo normal de un programa. Nos permiten repetir una porción de código tantas veces como queramos. Python incluye únicamente dos tipos de bucle: while y for.* 
