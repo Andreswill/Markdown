@@ -367,3 +367,14 @@ for name in "Andres Pacheco":
 
 
 ```
+
+```py
+print(len("Hola Andres"))
+print("\n")
+
+print("Hola Andres", len("Hola Andres"))
+print("\n")
+
+longitud = len("Hola Andres")
+print(longitud)
+```
